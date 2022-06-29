@@ -1,2 +1,8 @@
-n = map(int, input().split())
-print(n)
+n = input().split()
+list =[]
+
+for i in n:
+    list.append(int(i))
+
+
+print(list)
