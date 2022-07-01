@@ -1,34 +1,20 @@
-DNA = input().split
-dnalist = []
-numberList = []
-A = 0
-C = 0
-G = 0
-T = 0
+DNA = list(input())
+cont = 0
+listNumber =[]
+N = DNA[0]
+p = 0
 
 for i in DNA:
-    if i == A:
-        A+=1
-    elif i == C:
-        C+=1
-    elif i == G:
-        G+=1
-    elif i == T:
+    if i == N:
+        cont += 1
+        N = i
+    else:        
+        cont = 1
+        N = i
+    listNumber.append(cont)
 
-numberList = [A,C,G,T]
+for i in listNumber:
+    if i>p:
+        p=i
 
-
-
-
-
-
-
-
-
-
-
-
-if name1 == name2:
-    print(True)
-else:
-    print(False)
+print(p)
