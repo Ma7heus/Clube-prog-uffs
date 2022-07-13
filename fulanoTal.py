@@ -1,6 +1,5 @@
-def nomeFulado(nome,sobrenome):
-    nome, sobrenome = input().split()    
+def nomeFulado(nome,sobrenome):   
     print(f"Bem vindo, {nome} {sobrenome}!")
 
 
-nomeFulado("nome","sobrenome")
+nomeFulado(input(),input())
